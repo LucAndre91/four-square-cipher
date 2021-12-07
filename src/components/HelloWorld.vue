@@ -127,7 +127,7 @@ export default {
       var square2 = this.squareTwoLetters;
       var alphabet = this.alphabet;
       var messageOutput = "";
-      var messageInput = this.inputMessage.toLowerCase().replace(/j/g,'i').split('');
+      var messageInput = this.inputMessage.toLowerCase().replace(/j/g,'i').replace(/ /g, '').split('');
       var pos = 0;
 
       while(pos < messageInput.length) {
@@ -159,7 +159,7 @@ export default {
       var square2 = this.squareTwoLetters;
       var alphabet = this.alphabet;
       var messageOutput = "";
-      var messageInput = this.inputMessage.toLowerCase().replace(/j/g,'i').split('');
+      var messageInput = this.inputMessage.toLowerCase().replace(/j/g,'i').replace(/ /g, '').split('');
       var pos = 0;
 
       while(pos < messageInput.length) {
