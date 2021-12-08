@@ -17,7 +17,7 @@ export default {
 
 <style>
 *{
- background-color:rgb(168, 192, 228);
+ background-color:rgb(206, 225, 253);
 }
 #app {
   font-family: Arial, Helvetica, Arial, sans-serif;
