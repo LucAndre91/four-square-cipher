@@ -248,6 +248,9 @@ export default {
   border-radius: 8px;
   clear: both;
 }
+.form input:focus {
+  outline: none;
+}
 .buttons button {
   height: 30px;
   border-radius: 5px;
