@@ -258,6 +258,7 @@ export default {
   cursor: pointer;
 }
 .col {
+  width: 10%;
   border-style: solid;
 }
 .row {
