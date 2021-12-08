@@ -16,12 +16,14 @@ export default {
 </script>
 
 <style>
+*{
+ background-color:rgb(255, 233, 198);
+}
 #app {
   font-family: Arial, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

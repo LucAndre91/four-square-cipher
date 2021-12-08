@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="container">
-      <h1>Four Square Cipher</h1>
+      <h1 class="title">Four Square Cipher</h1>
       <div class="form">
         <label>Key 1 (for upper-right square): </label>
         <input v-model="key1" @input="createSquareOne"/>
@@ -236,6 +236,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.title {
+  font-family: 'Lucida Console', Courier, monospace;
+  margin-bottom: 50px;
+  /* color: rgb(233, 141, 118); */
+}
 .form {
   margin: auto;
   width: 500px;
