@@ -26,9 +26,9 @@
       <div class="squares">
         <div class="row">
           <div class="col">
-            <div v-for="row in regSquare" :key="row">
-              <span v-for="letter in row" :key="letter">
-                {{letter}} &nbsp;
+            <div class="squareRow" v-for="row in regSquare" :key="row">
+              <span class="grid" v-for="letter in row" :key="letter">
+                {{letter}} 
               </span>
             </div>
           </div>
@@ -36,9 +36,9 @@
 
 
           <div class="col">
-            <div v-for="row in squareOne" :key="row">
-              <span v-for="(letter) in row" :key="letter">
-                {{letter}} &nbsp;
+            <div class="squareRow" v-for="row in squareOne" :key="row">
+              <span class="grid" v-for="(letter) in row" :key="letter">
+                {{letter}}
               </span>
             </div>
           </div>
@@ -48,17 +48,17 @@
 
         <div class="row">
           <div class="col">
-            <div v-for="row in squareTwo" :key="row">
-              <span v-for="letter in row" :key="letter">
-                {{letter}} &nbsp;
+            <div class="squareRow" v-for="row in squareTwo" :key="row">
+              <span class="grid" v-for="letter in row" :key="letter">
+                {{letter}} 
               </span>
             </div>
           </div>
     
           <div class="col">
-            <div v-for="row in regSquare" :key="row">
-              <span v-for="letter in row" :key="letter">
-                  {{letter}} &nbsp;
+            <div class="squareRow" v-for="row in regSquare" :key="row">
+              <span class="grid" v-for="letter in row" :key="letter">
+                  {{letter}} 
               </span>
             </div>
           </div>
@@ -261,13 +261,21 @@ export default {
   cursor: pointer;
 }
 .col {
-  width: 9%;
-  border-style: solid;
+  width: 11%;
+  border: 1px solid black;
+  margin: 5px;
 }
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.grid {
+  border: 1px solid black;
+  width: 200%;
+}
+.squareRow {
+  display: flex;
 }
 h3 {
   margin: 40px 0 0;
