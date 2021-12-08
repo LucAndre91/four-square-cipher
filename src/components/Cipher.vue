@@ -248,7 +248,8 @@ export default {
   height: 20px;
   border-radius: 8px;
   clear: both;
-  margin-top: 5px;
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
 .form input:focus {
   outline: none;
