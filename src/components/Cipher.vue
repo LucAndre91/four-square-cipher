@@ -261,9 +261,9 @@ export default {
   cursor: pointer;
 }
 .col {
-  width: 11%;
-  border: 1px solid black;
+  width: 12%;
   margin: 5px;
+  border: 1px solid black;
 }
 .row {
   display: flex;
@@ -272,7 +272,7 @@ export default {
 }
 .grid {
   border: 1px solid black;
-  width: 200%;
+  width: 100%;
 }
 .squareRow {
   display: flex;
