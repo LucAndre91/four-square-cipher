@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="container">
-      <h2>Four Square Cipher</h2>
+      <h1>Four Square Cipher</h1>
       <div class="form">
         <label>Key 1 (for upper-right square): </label>
         <input v-model="key1" @input="createSquareOne"/>
