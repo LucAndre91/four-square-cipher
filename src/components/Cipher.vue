@@ -239,7 +239,6 @@ export default {
 .title {
   font-family: 'Lucida Console', Courier, monospace;
   margin-bottom: 50px;
-  /* color: rgb(233, 141, 118); */
 }
 .form {
   margin: auto;

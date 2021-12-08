@@ -17,12 +17,10 @@ export default {
 
 <style>
 *{
- background-color:rgb(255, 233, 198);
+ background-color:rgb(168, 192, 228);
 }
 #app {
   font-family: Arial, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 60px;
 }
