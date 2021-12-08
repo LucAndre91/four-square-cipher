@@ -3,10 +3,10 @@
     <div class="container">
       <h2>Four Square Cipher</h2>
       <div class="form">
-        <label>Key 1: </label>
+        <label>Key 1 (for upper-right square): </label>
         <input v-model="key1" @input="createSquareOne"/>
         <br />
-        <label>Key 2: </label>
+        <label>Key 2 (for lower-left square): </label>
         <input v-model="key2" @input="createSquareTwo" />
         <br />
         <label>Input message: </label>
@@ -16,6 +16,7 @@
           <button @click="encryptString">Encrypt</button>
           <button @click="decryptString">Decrypt</button>
         </div>
+        <label>Output message:</label>
         <input v-model="encryptedMessage" />
         <br />
       
@@ -247,6 +248,7 @@ export default {
   height: 20px;
   border-radius: 8px;
   clear: both;
+  margin-top: 5px;
 }
 .form input:focus {
   outline: none;
@@ -255,8 +257,8 @@ export default {
   height: 30px;
   border-radius: 5px;
   margin-right: 10px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
   cursor: pointer;
 }
