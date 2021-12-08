@@ -1,24 +1,28 @@
 <template>
   <div class="hello">
     <div class="container">
-      <label>Key 1: </label>
-      <input v-model="key1" @input="createSquareOne"/>
-      <br />
-      <label>Key 2: </label>
-      <input v-model="key2" @input="createSquareTwo" />
-      <br />
-      <label>Input message: </label>
-      <input v-model="inputMessage"/>
-      <br />
-      <button @click="encryptString">Encrypt</button>
-      <input v-model="encryptedMessage" />
-      <br />
-      <button @click="decryptString">Decrypt</button>
-      <input v-model="decryptedMessage"/>
-      <br />
-      <br />
+      <div class="form">
+        <label>Key 1: </label>
+        <input v-model="key1" @input="createSquareOne"/>
+        <br />
+        <label>Key 2: </label>
+        <input v-model="key2" @input="createSquareTwo" />
+        <br />
+        <label>Input message: </label>
+        <input v-model="inputMessage"/>
+        <br />
+        <div class="buttons">
+          <button @click="encryptString">Encrypt</button>
+          <button @click="decryptString">Decrypt</button>
+        </div>
+        <input v-model="encryptedMessage" />
+        <br />
+      
+        <br />
+        <br />
+      </div>
 
-      <div class="container">
+      <div class="squares">
         <div class="row">
           <div class="col">
             <div v-for="row in regSquare" :key="row">
@@ -50,7 +54,7 @@
             </div>
           </div>
     
-          <div class=col>
+          <div class="col">
             <div v-for="row in regSquare" :key="row">
               <span v-for="letter in row" :key="letter">
                   {{letter}} &nbsp;
@@ -180,7 +184,7 @@ export default {
         messageOutput = messageOutput.concat(c1);
         messageOutput = messageOutput.concat(c2);
       }
-      this.decryptedMessage = messageOutput
+      this.encryptedMessage = messageOutput
       return messageOutput
     }
   },
@@ -241,12 +245,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.form {
+  margin: auto;
+  width: 500px;
+  text-align: left;
+  clear: both;
 
+}
+.form input {
+  width: 100%;
+  height: 20px;
+  border-radius: 8px;
+  clear: both;
+}
+.buttons button {
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
 .col {
   border-style: solid;
 }
 .row {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h3 {
   margin: 40px 0 0;
